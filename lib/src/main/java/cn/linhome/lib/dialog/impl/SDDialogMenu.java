@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.fanwe.lib.dialog.impl;
+package cn.linhome.lib.dialog.impl;
 
 import android.app.Activity;
 import android.text.TextUtils;
@@ -26,11 +26,11 @@ import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.fanwe.lib.dialog.ISDDialogMenu;
-import com.fanwe.lib.dialog.R;
-
 import java.util.Arrays;
 import java.util.List;
+
+import cn.linhome.lib.dialog.ISDDialogMenu;
+import cn.linhome.lib.dialog.R;
 
 /**
  * 带取消按钮的菜单选择窗口

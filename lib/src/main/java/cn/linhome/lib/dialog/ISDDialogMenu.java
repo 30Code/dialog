@@ -13,14 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.fanwe.lib.dialog;
+package cn.linhome.lib.dialog;
 
 import android.view.View;
 import android.widget.BaseAdapter;
 
-import com.fanwe.lib.dialog.impl.SDDialogBase;
-
 import java.util.List;
+
+import cn.linhome.lib.dialog.impl.SDDialogBase;
 
 public interface ISDDialogMenu
 {

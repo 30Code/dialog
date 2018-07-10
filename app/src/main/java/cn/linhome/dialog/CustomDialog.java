@@ -1,8 +1,8 @@
-package com.fanwe.dialog;
+package cn.linhome.dialog;
 
 import android.app.Activity;
 
-import com.fanwe.lib.dialog.impl.SDDialogConfirm;
+import cn.linhome.lib.dialog.impl.SDDialogConfirm;
 
 /**
  * Created by Administrator on 2017/9/4.

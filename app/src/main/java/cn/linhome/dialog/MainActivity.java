@@ -1,16 +1,16 @@
-package com.fanwe.dialog;
+package cn.linhome.dialog;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
-import com.fanwe.lib.dialog.ISDDialogConfirm;
-import com.fanwe.lib.dialog.ISDDialogMenu;
-import com.fanwe.lib.dialog.impl.SDDialogBase;
-import com.fanwe.lib.dialog.impl.SDDialogConfirm;
-import com.fanwe.lib.dialog.impl.SDDialogMenu;
-import com.fanwe.lib.dialog.impl.SDDialogProgress;
+import cn.linhome.lib.dialog.ISDDialogConfirm;
+import cn.linhome.lib.dialog.ISDDialogMenu;
+import cn.linhome.lib.dialog.impl.SDDialogBase;
+import cn.linhome.lib.dialog.impl.SDDialogConfirm;
+import cn.linhome.lib.dialog.impl.SDDialogMenu;
+import cn.linhome.lib.dialog.impl.SDDialogProgress;
 
 public class MainActivity extends AppCompatActivity
 {
