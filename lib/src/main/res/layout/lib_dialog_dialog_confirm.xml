@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@drawable/lib_dialog_bg_dialog"
@@ -8,11 +7,11 @@
 
     <TextView
         android:id="@+id/tv_title"
-        style="@style/libDialog.Confirm.Text.Title"
+        style="@style/libDialog_confirm_text_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="@dimen/lib_dialog_confirm_margin_top_title"/>
+        android:layout_marginTop="@dimen/lib_dialog_confirm_margin_top_title" />
 
     <FrameLayout
         android:id="@+id/fl_content"
@@ -27,41 +26,19 @@
 
         <TextView
             android:id="@+id/tv_content"
-            style="@style/libDialog.Confirm.Text.Content"
+            style="@style/libDialog_confirm_text_content"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="内容"/>
+            android:text="内容" />
 
     </FrameLayout>
 
     <View
         android:layout_width="match_parent"
         android:layout_height="@dimen/lib_dialog_stroke"
-        android:background="@drawable/lib_dialog_stroke"/>
+        android:background="@drawable/lib_dialog_stroke" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:divider="@drawable/lib_dialog_stroke"
-        android:orientation="horizontal"
-        android:showDividers="middle">
-
-        <TextView
-            android:id="@+id/tv_cancel"
-            style="@style/libDialog.Confirm.Text.Cancel"
-            android:layout_width="0dp"
-            android:layout_height="@dimen/lib_dialog_height_dialog_button"
-            android:layout_weight="1"
-            android:background="@drawable/lib_dialog_sel_bg_button_bottom_left"/>
-
-        <TextView
-            android:id="@+id/tv_confirm"
-            style="@style/libDialog.Confirm.Text.Confirm"
-            android:layout_width="0dp"
-            android:layout_height="@dimen/lib_dialog_height_dialog_button"
-            android:layout_weight="1"
-            android:background="@drawable/lib_dialog_sel_bg_button_bottom_right"/>
-    </LinearLayout>
+    <include layout="@layout/lib_dialog_dialog_confirm_buttons" />
 
 </LinearLayout>

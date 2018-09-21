@@ -18,11 +18,12 @@ package cn.linhome.lib.dialog;
 import android.view.View;
 import android.widget.BaseAdapter;
 
+
 import java.util.List;
 
-import cn.linhome.lib.dialog.impl.SDDialogBase;
+import cn.linhome.lib.dialog.impl.FDialog;
 
-public interface ISDDialogMenu
+public interface FIDialogMenu
 {
     /**
      * 设置标题文字
@@ -30,7 +31,7 @@ public interface ISDDialogMenu
      * @param text
      * @return
      */
-    ISDDialogMenu setTextTitle(String text);
+    FIDialogMenu setTextTitle(String text);
 
     /**
      * 设置取消文字
@@ -38,7 +39,7 @@ public interface ISDDialogMenu
      * @param text
      * @return
      */
-    ISDDialogMenu setTextCancel(String text);
+    FIDialogMenu setTextCancel(String text);
 
     /**
      * 设置回调
@@ -46,7 +47,7 @@ public interface ISDDialogMenu
      * @param callback
      * @return
      */
-    ISDDialogMenu setCallback(Callback callback);
+    FIDialogMenu setCallback(Callback callback);
 
     /**
      * 设置列表数据
@@ -54,7 +55,7 @@ public interface ISDDialogMenu
      * @param objects
      * @return
      */
-    ISDDialogMenu setItems(Object... objects);
+    FIDialogMenu setItems(Object... objects);
 
     /**
      * 设置列表数据
@@ -62,7 +63,7 @@ public interface ISDDialogMenu
      * @param listObject
      * @return
      */
-    ISDDialogMenu setItems(List<Object> listObject);
+    FIDialogMenu setItems(List<Object> listObject);
 
     /**
      * 设置适配器
@@ -70,13 +71,13 @@ public interface ISDDialogMenu
      * @param adapter
      * @return
      */
-    ISDDialogMenu setAdapter(BaseAdapter adapter);
+    FIDialogMenu setAdapter(BaseAdapter adapter);
 
 
     interface Callback
     {
-        void onClickItem(View v, int index, SDDialogBase dialog);
+        void onClickItem(View v, int index, FDialog dialog);
 
-        void onClickCancel(View v, SDDialogBase dialog);
+        void onClickCancel(View v, FDialog dialog);
     }
 }

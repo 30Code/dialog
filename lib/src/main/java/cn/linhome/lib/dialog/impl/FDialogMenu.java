@@ -29,13 +29,13 @@ import android.widget.TextView;
 import java.util.Arrays;
 import java.util.List;
 
-import cn.linhome.lib.dialog.ISDDialogMenu;
+import cn.linhome.lib.dialog.FIDialogMenu;
 import cn.linhome.lib.dialog.R;
 
 /**
  * 带取消按钮的菜单选择窗口
  */
-public class SDDialogMenu extends SDDialogBase implements ISDDialogMenu
+public class FDialogMenu extends FDialog implements FIDialogMenu
 {
     public TextView tv_title;
     public TextView tv_cancel;
@@ -45,7 +45,7 @@ public class SDDialogMenu extends SDDialogBase implements ISDDialogMenu
 
     private Callback mCallback;
 
-    public SDDialogMenu(Activity activity)
+    public FDialogMenu(Activity activity)
     {
         super(activity);
         init();
@@ -54,19 +54,19 @@ public class SDDialogMenu extends SDDialogBase implements ISDDialogMenu
     private void init()
     {
         setContentView(R.layout.lib_dialog_dialog_menu);
-        tv_title = (TextView) findViewById(R.id.tv_title);
-        tv_cancel = (TextView) findViewById(R.id.tv_cancel);
-        lv_content = (ListView) findViewById(R.id.lv_content);
+        tv_title = findViewById(R.id.tv_title);
+        tv_cancel = findViewById(R.id.tv_cancel);
+        lv_content = findViewById(R.id.lv_content);
 
         tv_cancel.setOnClickListener(this);
         setTextTitle(null);
         setCanceledOnTouchOutside(true);
     }
 
-    //---------- ISDDialogMenu implements start ----------
+    //---------- FIDialogMenu implements start ----------
 
     @Override
-    public SDDialogMenu setTextTitle(String text)
+    public FDialogMenu setTextTitle(String text)
     {
         if (TextUtils.isEmpty(text))
         {
@@ -80,7 +80,7 @@ public class SDDialogMenu extends SDDialogBase implements ISDDialogMenu
     }
 
     @Override
-    public SDDialogMenu setTextCancel(String text)
+    public FDialogMenu setTextCancel(String text)
     {
         if (TextUtils.isEmpty(text))
         {
@@ -94,14 +94,14 @@ public class SDDialogMenu extends SDDialogBase implements ISDDialogMenu
     }
 
     @Override
-    public SDDialogMenu setCallback(Callback callback)
+    public FDialogMenu setCallback(Callback callback)
     {
         mCallback = callback;
         return this;
     }
 
     @Override
-    public SDDialogMenu setItems(Object... objects)
+    public FDialogMenu setItems(Object... objects)
     {
         List<Object> listObject = null;
         if (objects != null)
@@ -113,7 +113,7 @@ public class SDDialogMenu extends SDDialogBase implements ISDDialogMenu
     }
 
     @Override
-    public SDDialogMenu setItems(List<Object> listObject)
+    public FDialogMenu setItems(List<Object> listObject)
     {
         mListModel = listObject;
         setAdapter(getAdapter());
@@ -121,7 +121,7 @@ public class SDDialogMenu extends SDDialogBase implements ISDDialogMenu
     }
 
     @Override
-    public SDDialogMenu setAdapter(BaseAdapter adapter)
+    public FDialogMenu setAdapter(BaseAdapter adapter)
     {
         lv_content.setAdapter(adapter);
         lv_content.setOnItemClickListener(new OnItemClickListener()
@@ -131,7 +131,7 @@ public class SDDialogMenu extends SDDialogBase implements ISDDialogMenu
             {
                 if (mCallback != null)
                 {
-                    mCallback.onClickItem(view, (int) id, SDDialogMenu.this);
+                    mCallback.onClickItem(view, (int) id, FDialogMenu.this);
                 }
                 dismissAfterClickIfNeed();
             }
@@ -139,7 +139,7 @@ public class SDDialogMenu extends SDDialogBase implements ISDDialogMenu
         return this;
     }
 
-    //---------- ISDDialogMenu implements end ----------
+    //---------- FIDialogMenu implements end ----------
 
     protected BaseAdapter getAdapter()
     {
@@ -177,7 +177,7 @@ public class SDDialogMenu extends SDDialogBase implements ISDDialogMenu
             {
                 convertView = LayoutInflater.from(getContext()).inflate(R.layout.lib_dialog_item_dialog_menu, parent, false);
             }
-            TextView textView = (TextView) convertView.findViewById(R.id.tv_content);
+            TextView textView = convertView.findViewById(R.id.tv_content);
             Object object = getItem(position);
             if (object != null)
             {
