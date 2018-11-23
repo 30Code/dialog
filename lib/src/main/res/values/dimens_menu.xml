@@ -2,20 +2,20 @@
 <resources>
 
     <!-- 菜单窗口 标题字体大小 -->
-    <dimen name="lib_dialog_menu_text_title">@dimen/res_text_s</dimen>
+    <dimen name="lib_dialog_menu_text_title">12sp</dimen>
     <!-- 菜单窗口 取消字体大小 -->
-    <dimen name="lib_dialog_menu_text_cancel">@dimen/res_text_m</dimen>
+    <dimen name="lib_dialog_menu_text_cancel">14sp</dimen>
     <!-- 菜单窗口 item字体大小 -->
-    <dimen name="lib_dialog_menu_text_item">@dimen/res_text_m</dimen>
+    <dimen name="lib_dialog_menu_text_item">14sp</dimen>
 
     <!-- 菜单窗口 标题高度 -->
-    <dimen name="lib_dialog_menu_height_title">@dimen/res_px_42</dimen>
+    <dimen name="lib_dialog_menu_height_title">@dimen/qb_px_42</dimen>
     <!-- 菜单窗口 取消高度 -->
-    <dimen name="lib_dialog_menu_height_cancel">@dimen/res_px_42</dimen>
+    <dimen name="lib_dialog_menu_height_cancel">@dimen/qb_px_42</dimen>
     <!-- 菜单窗口 item高度 -->
-    <dimen name="lib_dialog_menu_height_item">@dimen/res_px_42</dimen>
+    <dimen name="lib_dialog_menu_height_item">@dimen/qb_px_42</dimen>
 
     <!-- 菜单窗口 取消顶部间距-->
-    <dimen name="lib_dialog_menu_margin_top_cancel">@dimen/res_px_11</dimen>
+    <dimen name="lib_dialog_menu_margin_top_cancel">@dimen/qb_px_11</dimen>
 
 </resources>

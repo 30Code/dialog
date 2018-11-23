@@ -2,24 +2,24 @@
 <resources>
 
     <!-- 确认窗口 标题字体大小 -->
-    <dimen name="lib_dialog_confirm_text_title">@dimen/res_text_l</dimen>
+    <dimen name="lib_dialog_confirm_text_title">16sp</dimen>
     <!-- 确认窗口 内容字体大小 -->
-    <dimen name="lib_dialog_confirm_text_content">@dimen/res_text_s</dimen>
+    <dimen name="lib_dialog_confirm_text_content">12sp</dimen>
     <!-- 确认窗口 取消字体大小 -->
     <dimen name="lib_dialog_confirm_text_cancel">13sp</dimen>
     <!-- 确认窗口 确认字体大小 -->
     <dimen name="lib_dialog_confirm_text_confirm">13sp</dimen>
 
     <!-- 确认窗口 标题顶部间距-->
-    <dimen name="lib_dialog_confirm_margin_top_title">@dimen/res_px_16</dimen>
+    <dimen name="lib_dialog_confirm_margin_top_title">@dimen/qb_px_16</dimen>
 
     <!-- 确认窗口 内容左边间距 -->
-    <dimen name="lib_dialog_confirm_margin_left_content">@dimen/res_px_16</dimen>
+    <dimen name="lib_dialog_confirm_margin_left_content">@dimen/qb_px_16</dimen>
     <!-- 确认窗口 内容顶部间距 -->
-    <dimen name="lib_dialog_confirm_margin_top_content">@dimen/res_px_16</dimen>
+    <dimen name="lib_dialog_confirm_margin_top_content">@dimen/qb_px_16</dimen>
     <!-- 确认窗口 内容右边间距 -->
-    <dimen name="lib_dialog_confirm_margin_right_content">@dimen/res_px_16</dimen>
+    <dimen name="lib_dialog_confirm_margin_right_content">@dimen/qb_px_16</dimen>
     <!-- 确认窗口 内容底部间距 -->
-    <dimen name="lib_dialog_confirm_margin_bottom_content">@dimen/res_px_16</dimen>
+    <dimen name="lib_dialog_confirm_margin_bottom_content">@dimen/qb_px_16</dimen>
 
 </resources>

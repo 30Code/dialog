@@ -2,11 +2,11 @@
 <resources>
 
     <!-- 分割线 -->
-    <color name="lib_dialog_stroke">@color/res_stroke</color>
+    <color name="lib_dialog_stroke">#e7e7f1</color>
 
     <!-- 按钮正常颜色 -->
-    <color name="lib_dialog_bg_button_normal">@color/white</color>
+    <color name="lib_dialog_bg_button_normal">#FFFFFF</color>
     <!-- 按钮按下颜色 -->
-    <color name="lib_dialog_bg_button_pressed">@color/res_stroke_deep</color>
+    <color name="lib_dialog_bg_button_pressed">#e5e5e5</color>
 
 </resources>
