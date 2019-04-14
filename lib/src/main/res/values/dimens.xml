@@ -2,11 +2,11 @@
 <resources>
 
     <!-- 按钮高度 -->
-    <dimen name="lib_dialog_height_dialog_button">@dimen/qb_px_42</dimen>
+    <dimen name="lib_dialog_height_dialog_button">40dp</dimen>
 
     <!-- 分割线大小 -->
     <dimen name="lib_dialog_stroke">1px</dimen>
     <!-- 圆角 -->
-    <dimen name="lib_dialog_corner_button">@dimen/qb_px_5</dimen>
+    <dimen name="lib_dialog_corner_button">5dp</dimen>
 
 </resources>
