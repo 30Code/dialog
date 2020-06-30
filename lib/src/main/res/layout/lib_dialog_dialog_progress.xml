@@ -1,28 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:background="@drawable/lib_dialog_progress_bg_dialog"
-    android:gravity="center"
-    android:orientation="horizontal"
-    android:padding="10dp">
+    android:layout_width="160dp"
+    android:layout_height="92dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/lib_dialog_bg_dialog"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
 
     <ProgressBar
         android:id="@+id/pb_progress"
-        style="@android:style/Widget.ProgressBar.Small"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:indeterminateDrawable="@drawable/lib_dialog_progress_progress_white" />
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="15dp"/>
 
     <TextView
         android:id="@+id/tv_msg"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
+        android:layout_height="19dp"
         android:layout_marginLeft="10dp"
         android:text="@string/lib_dialog_progress_text_loading"
-        android:textColor="@android:color/white"
-        android:textSize="12sp"
-        android:visibility="gone" />
+        android:textColor="#999999"
+        android:textSize="14sp"
+        android:layout_marginTop="7dp"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        tools:visibility="visible"/>
 
 </LinearLayout>

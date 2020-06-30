@@ -41,6 +41,7 @@ public class FDialogProgress extends FDialog
     private void init()
     {
         setContentView(R.layout.lib_dialog_dialog_progress);
+        paddings(0);
         tv_msg = findViewById(R.id.tv_msg);
         pb_progress = findViewById(R.id.pb_progress);
     }
